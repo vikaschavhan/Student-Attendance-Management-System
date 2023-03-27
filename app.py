@@ -14,7 +14,7 @@ def main():
 
     elif choice == "View Attendance":
         st.subheader("View Attendance")
-        df = pd.read_csv("attendance.csv")
+        df = pd.read_csv("attendance.csv", sep=',')
         st.dataframe(df)
 
     elif choice == "Add Attendance":
@@ -29,7 +29,7 @@ def main():
 
     elif choice == "View Students":
         st.subheader("View Students")
-        df = pd.read_csv("students.csv")
+        df = pd.read_csv("students.csv", sep=',')
         st.dataframe(df)
 
     elif choice == "Add Students":
